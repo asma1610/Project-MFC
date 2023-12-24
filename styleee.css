@@ -1,0 +1,114 @@
+
+*
+{
+    font-family: "Times New Roman", "Times", serif;
+    color: #314862;
+}
+
+p
+{
+    font-size: 18px;
+}
+   
+body
+{
+    padding: 15px;
+    background-image: url(transp.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;   
+}
+
+td
+{
+    font-size: 18px;
+}
+
+dl
+{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+div#loginn
+{
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+    height: 400px;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav
+{
+    background-color: rgb(82, 91, 148);   
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    margin-right: 30px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #314862;
+}
+
+button
+{
+background-color: rgb(82, 91, 148);
+color: #ffffff;
+font-size: 14px;
+outline: none;
+border-radius: 5px;
+border: none;
+padding: 8px 15px;
+}
+
+input 
+{
+font-family: "Poppins", sans-serif;
+margin: 10px 0;
+width: 50%;
+background-color: #e2e2e2;
+border: none;
+outline: none;
+padding: 12px 20px;
+border-radius: 4px;
+}
+textarea 
+{
+    width: 50%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+textarea#homep 
+{
+    width: 95%;
+    height: 180px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    resize: none;
+}
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> MedFaceCare HOME Page </title>
+    <link rel="icon" href="logo.png"/>
+    <link rel="stylesheet" href="styleee.css">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      function sss(){
+        swal("Message sent!", "", "success");
+      }
+
+    </script>
+ </head>
+
+
+ <body>
+    <header>
+        <table>
+            <tr>
+                <td text-align="center"><img src="logo.png" width="70px" height="70px"></td>
+                <td text-align="center">MedFaceCare</td>
+            </tr>
+        </table>
+        <br>
+     <div class="topnav">          
+        <a href="productshtml.php">Products</a>
+        <a href="loggedhtml.php">Home</a>
+     </div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <form action="messagee.php" target="" method="POST">
+
+    <div style=" width: 100%; height: 400px;">  
+  
+        <div style=" width: 75%; height: 400px; float:left;">  
+            <h2> Why face care is important? </h2>
+            
+            <table>
+                <tr>
+                    <td>
+                        Your skin is the organ that comes into contact with the rest of the world.It holds body fluids in, preventing dehydration,and keeps harmful microbes (MYE-krobs) out—without it, we would get infections.Your skin is full of nerve endings that help you feel things like heat, cold, and pain.If you couldn’t feel these things, you could get badly hurt and not even know it!<br> Since your skin plays such an important role in protecting your body, you should keep it as healthy as you can.This will help you keep from getting sick or having damage to your bones, muscles, and internal organs. 
+                        <br>
+                        Skin is actually your body’s largest organ by size.Your skin helps keep your body temperature even.If you get too hot, blood vessels near the surface of the skin, called capillaries,enlarge to let the warm blood cool down.Your skin also makes vitamin D when the sun shines on it.Vitamin D is important for the health of your bones and other parts of your body. 
+                    </td>
+                    <td>
+                        <img src="skin-1-normal.png" width="350px" height="350px">  
+                    </td>
+                </tr>
+            </table>
+           
+        </div>  
+        <div id="loginn" style="background-color:whitesmoke; width:20%; height: 400px; float:right;">
+            
+            <h4><img src="user.png" width="15px" height="15px"> &nbsp; Welcome <?php include("login.php"); echo $_SESSION['fname'];?> ,</h4>
+            
+            <h5>Want to ask us about anything?</h5>
+            <br>
+            <textarea id="homep" name="Q" placeholder="Tell us what you need..."></textarea>
+            <br>
+            <button name="send" type="submit" onclick="sss()"> Send</button> 
+            <h6>Response will be sent to your email</h6>
+
+
+        </div>  
+    </div> 
+    <h2>Your Daily Skincare Routine</h2>
+    <p>
+        It’s not enough to have good skin-care products: For your products to be most effective, you also need to apply them in the correct order. Your routine will depend on your skin type, the ingredients and formulations of your products, and the time of day. A good rule of thumb, though, is to apply in order of texture, from thinnest to thickest, since thin products won’t be able to penetrate thicker ones.
+    </p>
+    <img src="product.webp" width="600px" height="375px" >
+    
+    <h3> Step 1: Wash your face </h3>
+    <p>Morning and night, rinse your face water and rub a small amount of gentle cleanser between clean palms. Massage face wash all over your face using gentle pressure. Rinse your hands and massage your face with water to rinse your face until you’ve removed the cleanser and grime. Gently pat your face dry with a soft towel. If you wear makeup, you may need to cleanse twice at night. First, remove your makeup with cleansing oil or micellar water. Try leaving dedicated eye-makeup removers on for a couple of minutes to allow the makeup to come off more easily and avoid rubbing your eyes. Follow up with a full-face gentle cleanse.</p>
+    <h3> Step 2: Apply toner</h3>
+    <p> If you use toner, apply after cleansing your face and before everything else. Pour a few drops of toner into your palms or a cotton pad and gently swipe onto your face. If your toner is exfoliating—meaning that it removes dead skin cells with ingredients like glycolic acid—use only at night. Hydrating formulas can be used twice a day. Do not use exfoliating toner and retinoids or other exfoliators at the same time.</p>
+    <h3> Step 3: Apply serums</h3>
+    <p>Morning is a great time to use a serum with antioxidants—like a brightening vitamin C serum—because they protect your skin from free radicals you’ll encounter throughout the day. Nighttime is a good time to use a moisturizing serum with hyaluronic acid, which keeps your skin from drying out at night, especially if you’re using anti-aging or acne treatments that can irritate and dry out the skin. Serums can also contain exfoliants such as alpha-hydroxy acids (AHA) or lactic acid. Whatever you’re using, always remember: Water-based serums should go underneath moisturizer; oil-based serums should be applied after moisturizer.</p>
+    <dl>
+        <dt>Hydrating Serum</dt>
+        <dd>
+            Hydrating serums are suitable for most skin types. With hyaluronic acid as the key ingredient, a hydrating serum works by drawing water to the skin to deliver extra hydration. Use this with moisturizer, which locks the moisture in by creating a barrier on the skin’s surface. Other commonly used ingredients in hydrating serums include aloe vera, ceramide, vitamin E, and rosewater.
+        </dd>
+        <dt>Brightening Serum</dt>
+        <dd>
+            If you want radiant, even-toned skin, brightening serums are the way to go. They usually contain niacinamide, which refines and brightens the skin, vitamin C, green tea, or other antioxidants. These help the skin repair itself and reduce inflammation from sun exposure or acne breakouts. Consequently, they help brighten the skin and refine pores while supporting collagen and elastin production.
+        </dd>
+        <dt>Exfoliating Serum</dt>
+        <dd>
+            Dull skin cannot reflect light. It also usually comes part and parcel with uneven skin tone and texture. An exfoliating serum with AHAs like glycolic acid and lactic or BHAs like salicylic acid can help address this. AHAs are ideal for mature skin, while BHAs are more suited for oily and acne-prone skin. Follow the instructions when using exfoliating serums since over-exfoliating can damage the skin barrier and cause breakouts, peeling, and even skin burning. 
+        </dd>
+        <dt>Anti-Aging Serum</dt>
+        <dd>
+            A face serum can address most of the common signs of premature skin aging since its molecules can penetrate deep into the skin. These signs include sun damage, fine lines, enlarged pores, dryness, and dullness. A notable ingredient is retinol, which promotes cellular turnover, revealing fresh cells. It’s essential to use sunscreen when using anti-aging serums because they increase skin sensitivity.
+        </dd>
+
+    </dl>
+    <h3> Step 4: Apply eye cream</h3>
+    <p> You can apply regular moisturizer to your under-eye area, but if you decide to use a specialized eye cream, you’ll typically want to layer it underneath moisturizer, since eye creams tend to be thinner than face moisturizers. Try using an eye cream with a metal roller-ball applicator and storing it in the fridge to counteract puffiness in the morning. Using a hydrating eye cream at night can cause fluid retention that makes eyes look puffy in the morning.</p>
+    <h3>Step 5: Moisturize</h3>
+    <p>Moisturizer both hydrates skin and locks in all the other layers of product you’ve applied. Look for a lightweight lotion for the morning, ideally with SPF 30 or higher. In the evening, you can use a thicker night cream. Those with dry skin may want to use a cream morning and night.</p>
+    <h3>Step 5: Apply sunscreen</h3>
+    <p>It may be the last step, but nearly any dermatologist will tell you that sun protection is the most important part of any skin-care regimen. Protecting your skin from UV rays can prevent skin cancer and signs of aging. If your moisturizer doesn’t contain SPF, you still need to wear sunscreen. For chemical sunscreens, wait 20 minutes before going outside for the sunscreen to be effective. Look for broad-spectrum SPF, meaning that your sunscreen protects from both UVA and UVB radiation.</p>
+
+    
+
+
+ 
+</form>
+</body>
+</html>

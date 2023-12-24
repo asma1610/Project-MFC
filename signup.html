@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> MedFaceCare SignUp  </title>
+    <link rel="icon" href="logo.png"/>
+    <link rel="stylesheet" href="styleee.css">
+    <style>
+
+        .container {
+        align-items: center;
+        display: flex;
+        justify-content: center; 
+        }
+        .card {
+        border-radius: 10px;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+        width: 600px;
+        height: 430px;
+  
+        }
+        .card_title {
+        text-align: center;
+        }
+        input {
+        font-family: "Poppins", sans-serif;
+        margin: 10px 0;
+        width: 50%;
+        background-color: #e2e2e2;
+        border: none;
+        outline: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        }
+
+    </style>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      
+
+      function sign(){
+      if (pass.value == pass2.value){
+      
+        swal("User Created!", "", "success");
+      }
+     
+    }
+
+    </script>
+
+  </head>
+  <body>
+    <header>
+        <table>
+            <tr>
+                <td text-align="center"><img src="logo.png" width="70px" height="70px"></td>
+                <td text-align="center">MedFaceCare</td>
+            </tr>
+        </table>
+        <br>
+     <div class="topnav">          
+       
+        <a href="MedFaceCare.html">Home</a>
+     </div>
+    </header>
+       <br><br>
+       
+      
+    <form action="signup.php" target="" method="POST">
+        <div class="container">
+            <div class="card">
+              <div class="card_title">
+               <h3>Sign Up</h3>
+    
+             <input id="fname" name="fname" type="text" maxlength="15" placeholder="First Name" required> 
+             <input id="lname" name="lname" type="text" maxlength="15" placeholder="Last Name" required>
+             <input id="email" name="email" type="email" name="email" placeholder="Email" required>
+             <input id="pass" name="pass" type="password" maxlength="8" placeholder=" Password - maximum 8 characters" required>
+             <input id="pass2" name="pass2" type="password" maxlength="8" placeholder=" Confirm Password" required>
+
+              <br>
+              <br>
+
+              <button type="submit" name="signup" onclick="sign()"> Create User</button>
+              </div>
+            </div>
+        </div>
+
+    </form>
+  </body>
+</html>
